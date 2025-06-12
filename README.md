@@ -19,32 +19,31 @@
 
 ## 📁 폴더 구조
 recycle_back_dk/
-├── controllers/              # 기능별 비즈니스 로직 처리
-│   ├── admin/                # 관리자용 컨트롤러
+├── controllers/           # 기능별 비즈니스 로직 처리
+│   ├── admin/             # 관리자용 컨트롤러
 │   │   ├── calendarController.js
 │   │   ├── productController.js
 │   │   ├── dashboardController.js
 │   │   ├── companyController.js
 │   │   └── faqController.js
-│   ├── user/                 # 일반 사용자 기능
-│   └── recycleController.js  # 분리수거 관련 기능
-├── routes/                   # 각 컨트롤러에 대한 API 라우터 정의
+│   ├── user/              # 일반 사용자 기능
+│   └── recycleController.js   # 분리수거 관련 기능
+├── routes/                # 각 컨트롤러에 대한 API 라우터 정의
 │   ├── adminRoutes.js
 │   ├── userRoutes.js
 │   └── recycleRoutes.js
-├── database/                 # PostgreSQL 연결 pool
+├── database/              # PostgreSQL 연결 pool
 │   └── database.js
-├── middleware/
-│   ├── authenticateToken.js  # JWT 인증 미들웨어
-│   └── middleware.js         # 공통 미들웨어
-├── scheduler.js              # 예약 작업 처리 (예: 나무 성장, 자동 초기화 등)
-├── index.js                  # 서버 실행 진입점
-├── Dockerfile                # Docker 설정
-├── .env                      # 환경변수 설정
-├── package.json              # 의존성 목록
+├── middleware/            # 인증/공통 미들웨어
+│   ├── authenticateToken.js   # JWT 인증 미들웨어
+│   └── middleware.js
+├── scheduler.js           # 예약 작업 처리 (예: 나무 성장, 자동 초기화 등)
+├── index.js               # 서버 실행 진입점
+├── Dockerfile             # Docker 설정
+├── .env                   # 환경변수 설정
+├── package.json           # 의존성 목록
 └── .gitignore
 
----
 
 ## 🔐 인증 구조
 
